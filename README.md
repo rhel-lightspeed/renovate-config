@@ -12,6 +12,14 @@ Repos inherit this config automatically via Renovate's [org-level inherited conf
 
 **Schedule:** Weekends only (America/Chicago).
 
+**Labels:** All Renovate PRs get a `dependencies` label. Vulnerability alert PRs also get `security`.
+
+**Rate limits:** Disabled (`prHourlyLimit: 0`, `prConcurrentLimit: 0`) so all PRs open at once within the weekend schedule window.
+
+**Vulnerability alerts:** Security fixes skip the 7-day cooldown (`minimumReleaseAge: 0 days`).
+
+**Tekton:** Enabled org-wide, follows the weekend schedule.
+
 **Rules:**
 
 - 7-day minimum release age on all updates (cooldown period)
