@@ -25,6 +25,6 @@ Repos inherit this config automatically via Renovate's [org-level inherited conf
 - 7-day minimum release age on all updates (cooldown period)
 - Auto-merge disabled globally (including GitHub-native `platformAutomerge`)
 - `Signed-off-by` trailer on all Renovate commits (`:gitSignOff`)
-- Python dependency updates grouped into a single PR, labeled `python`
+- All non-major updates (minor, patch, pin, digest) grouped into a single PR
 - Python runtime version updates disabled (repos pin their own Python version)
 - Git submodule references updated automatically
