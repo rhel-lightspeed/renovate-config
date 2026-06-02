@@ -20,6 +20,11 @@
       "matchCategories": ["python"],
       "groupName": "python dependencies",
       "addLabels": ["python"]
+    },
+    {
+      "description": "Disable Python version updates (pinned per repo)",
+      "matchDepNames": ["python"],
+      "enabled": false
     }
   ]
 }
