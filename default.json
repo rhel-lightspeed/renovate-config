@@ -11,7 +11,7 @@
   },
   "tekton": {
     "enabled": true,
-    "managerFilePatterns": ["\\.tekton/.+\\.ya?ml$"]
+    "managerFilePatterns": ["/\\.tekton/.+\\.ya?ml$/"]
   },
   "git-submodules": {
     "enabled": true
