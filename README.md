@@ -18,7 +18,7 @@ Repos inherit this config automatically via Renovate's [org-level inherited conf
 
 **Vulnerability alerts:** Security fixes skip the 7-day cooldown (`minimumReleaseAge: 0 days`).
 
-**Tekton:** Enabled org-wide, follows the weekend schedule.
+**Tekton:** Enabled org-wide for `.tekton/*.yaml` files, follows the weekend schedule. Scans OCI bundle references in Tekton `resolver: bundles` task/pipeline refs.
 
 **Rules:**
 
