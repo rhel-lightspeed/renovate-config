@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices", ":gitSignOff", "schedule:weekends"],
+  "timezone": "America/Chicago",
+  "platformAutomerge": false,
+  "git-submodules": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "description": "7-day cooldown for all updates",
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "minimumReleaseAge": "7 days"
+    },
+    {
+      "description": "Disable auto-merge for all updates",
+      "automerge": false
+    },
+    {
+      "description": "Group all Python dependency updates",
+      "matchCategories": ["python"],
+      "groupName": "python dependencies",
+      "addLabels": ["python"]
+    }
+  ]
+}
