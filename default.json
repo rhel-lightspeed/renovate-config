@@ -17,22 +17,23 @@
   },
   "packageRules": [
     {
-      "description": "7-day cooldown for all updates",
+      "description": ["7-day cooldown for all updates"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "minimumReleaseAge": "7 days"
     },
     {
-      "description": "Disable auto-merge for all updates",
+      "description": ["Disable auto-merge for all updates"],
+      "matchPackageNames": ["*"],
       "automerge": false
     },
     {
-      "description": "Group all non-major dependency updates",
+      "description": ["Group all non-major dependency updates"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-non-major"
     },
     {
-      "description": "Disable Python version updates (pinned per repo)",
+      "description": ["Disable Python version updates (pinned per repo)"],
       "matchDepNames": ["python"],
       "enabled": false
     }
