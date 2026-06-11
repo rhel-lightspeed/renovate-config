@@ -5,7 +5,7 @@
     ":gitSignOff"
   ],
   "labels": ["dependencies"],
-  "schedule": ["* * * * 0,6"],
+  "schedule": ["* 2-6 * * 1"],
   "timezone": ["UTC"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
@@ -15,7 +15,7 @@
     "minimumReleaseAge": "0 days"
   },
   "lockFileMaintenance": {
-    "schedule": ["* * * * 0,6"]
+    "schedule": ["* 2-6 * * 1"]
   },
   "tekton": {
     "enabled": true,
