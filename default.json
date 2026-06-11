@@ -1,7 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", ":gitSignOff", "schedule:weekends"],
+  "extends": [
+    "config:best-practices",
+    ":gitSignOff"
+  ],
   "labels": ["dependencies"],
+  "schedule": ["* 2-9 * * 2"],
+  "timezone": ["UTC"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "platformAutomerge": false,
