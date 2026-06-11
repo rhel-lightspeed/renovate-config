@@ -1,13 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", ":gitSignOff", "schedule:weekends"],
+  "extends": [
+    "config:best-practices",
+    ":gitSignOff"
+  ],
   "labels": ["dependencies"],
+  "schedule": ["* 2-6 * * 1"],
+  "timezone": ["UTC"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "platformAutomerge": false,
   "vulnerabilityAlerts": {
     "labels": ["security"],
     "minimumReleaseAge": "0 days"
+  },
+  "lockFileMaintenance": {
+    "schedule": ["* 2-6 * * 1"]
   },
   "tekton": {
     "enabled": true,
