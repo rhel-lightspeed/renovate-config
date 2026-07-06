@@ -6,7 +6,7 @@
   ],
   "labels": ["dependencies"],
   "schedule": ["* 2-6 * * 1"],
-  "timezone": ["UTC"],
+  "timezone": "UTC",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "platformAutomerge": false,
